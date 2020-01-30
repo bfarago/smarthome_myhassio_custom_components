@@ -1,0 +1,29 @@
+# How to log a component, uncomment and change the following.
+#logger:
+#  default: critical
+#  logs:
+#    custom_components.sonoff: debug
+#    homeassistant.components.websocket_api: debug
+
+# Example configuration.yaml entry for Tado thermostate
+tado:
+  username: "youremail"
+  password: "yourpassword"
+
+device_tracker:
+  - platform: tado
+    username: "youremail"
+    password: "yourpassword"
+    home_id: givenbytheapp
+
+#sonoff official firmware related
+sonoff:
+  username: "youremail"
+  password: "yourpassword"
+#  debug: True #only in case of debug report is needed
+
+#selly official firmware related
+shelly:
+  cloud_auth_key: "longkeyfromtheshellymobileapp"
+  cloud_server: "shelly-XXXX-eu.shelly.cloud frommobilapp"
+
